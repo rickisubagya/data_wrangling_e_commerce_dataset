@@ -19,7 +19,7 @@ def feature_engineering_ab(df8):
     # Drop duplicate user id
     ab_test = ab_test.drop_duplicates(subset=['user_id'], keep='first')
     
-    # Groupby date the datasets and seperate the control and treatment
+    # Groupby date the datasets and separate the control and treatment
     ab_test_temp = ab_test.groupby(['date', 'group']).agg(['count', 'sum']).unstack().reset_index()[['date', 'converted']].values
     ab_test_daily = pd.DataFrame(ab_test_temp, columns=['date', 'control_visit', 'treatment_visit', 'control_converted', 'treatment_converted'])
     
