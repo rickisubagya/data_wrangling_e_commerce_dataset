@@ -1,24 +1,58 @@
-# This is a simple repository for practice in data wrangling
+# This is a simple repository for practice in the data wrangling
 
-### The Data Source
+## The Data Source
 
-You can download the dataset from [open data Jabar](https://opendata.jabarprov.go.id/id), we choose 5 datasets consisting of:
+### Sales Datasets
 
-- [Number of toddlers with normal growth length  (green) in West Java Province](https://opendata.jabarprov.go.id/id/dataset/jumlah-anak-usia-0-23-bulan-dengan-panjang-pertumbuhan-normal-hijau-berdasarkan-desakelurahan-di-jawa-barat)
-- [Number of toddlers with stunting growth risk (yellow) in West Java Province](https://opendata.jabarprov.go.id/id/dataset/jumlah-anak-usia-0-23-bulan-dengan-panjang-pertumbuhan-resiko-stunting-kuning-berdasarkan-desakelurahan-di-jawa-barat)
-- [Number of stunting toddlers (red) in West Java Province](https://opendata.jabarprov.go.id/id/dataset/jumlah-anak-usia-0-23-bulan-dengan-panjang-pertumbuhan-terindikasi-stunting-merah-berdasarkan-desakelurahan-di-jawa-barat)
-- [Number of pregnant women in West Java Province](https://opendata.jabarprov.go.id/id/dataset/jumlah-ibu-hamil-berdasarkan-desakelurahan-di-jawa-barat)
-- [Number of pregnant women who suffer Chronic Energy Deficiency (CED) in West Java Province](https://opendata.jabarprov.go.id/id/dataset/jumlah-ibu-hamil-yang-mengalami-kekurangan-energi-kronis-kek-berdasarkan-desakelurahan-di-jawa-barat)
+You can download the dataset from this [link](https://docs.google.com/document/d/1v33dd7tNS6pYoUXp32GO1YyW1LpxuvDMuFJmKOYJdsY/edit), the Sales datasets consist of:
 
-### Data Wrangling
+- Customers Dataset
+- Orders Dataset
+- Order Review Dataset
+- Order Items Dataset
+- Product Dataset
+- Sellers Dataset
 
-- Merge all the datasets
-- Convert strings to title case
-- Rename some columns’s name
-- Create a column called toddler_measured
-- Reindex columns position
-- Convert column year to Datetime format
-- Save to excel file
-- Dataset ready to process in Tableau
+Here is the relation between Sales datasets
 
-You can click [here](https://medium.com/@rickisubagya/dashboard-stunting-ratio-in-west-java-province-2a97f396ccee) to read a full story about dashboard stunting ratio in West Java Province on medium.
+![Untitled](Easy%20Report%2052852b68a86a447aaa2a39f27d35c205/Untitled.png)
+
+The data wrangling process for Sales datasets:
+
+- Convert into DateTime format
+- Sort value
+- Input missing value
+- Merge datasets
+- Drop some rows
+- Convert value into title case
+
+You can check the documentation in the helper folder, feature_engineering_sales_performance.py
+
+### Marketing Datasets
+
+You can download the dataset from this [link](https://docs.google.com/document/d/1OCgfp8fGf9QSAEVtb8qNWspVGORqNWhx-uEy3KoD4Yc/edit), the data wrangling process for marketing datasets:
+
+- Convert into DateTime format
+- Rename column name
+- Input missing value
+- RFM segmentation
+
+You can check the documentation in the helper folder, feature_engineering_marketing.py
+
+### A/B Testing Datasets
+
+You can download the dataset from this [link](https://docs.google.com/document/d/1V7O6xiJ0wH5h3ddBK4Ji0vcD_6DNuXuKWb-yxRw28Ww/edit), the data wrangling process for a/b testing datasets:
+
+- Convert into DateTime format
+- Make sure if the control group visit the old page and the treatment group visits the new page
+- Drop duplicate user-id
+- Group data by date and separate the control and treatment
+- Calculate the conversion rate for group control and treatment
+- Calculate the power
+- Calculate the p-value
+
+You can check the documentation in the helper folder, feature_engineering_ab.py
+
+- If you want to read the full story of this project please visit my [medium](https://medium.com/@rickisubagya/e-commerce-dashboard-37202f02e940) story
+- If you want to see the E-Commerce Dashboard that I have created please visit my [Tableau](https://public.tableau.com/app/profile/ricki.subagya/viz/IhKamesdashboard/C-Level) Dashboard
+- Let’s connect with my [LinkedIn](https://www.linkedin.com/in/rickisubagya/) account

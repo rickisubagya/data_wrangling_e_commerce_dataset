@@ -1,16 +1,10 @@
-# Easy Report
-
-Date Created: October 3, 2022 5:34 PM
-Due Date: September 11, 2022
-Status: Done
-
 # This is a simple repository for practice in the data wrangling
 
 ## The Data Source
 
 ### Sales Datasets
 
-You can download the dataset from [t](https://opendata.jabarprov.go.id/id)his [link](https://docs.google.com/document/d/1v33dd7tNS6pYoUXp32GO1YyW1LpxuvDMuFJmKOYJdsY/edit), the Sales datasets consist of:
+You can download the dataset from this [link](https://docs.google.com/document/d/1v33dd7tNS6pYoUXp32GO1YyW1LpxuvDMuFJmKOYJdsY/edit), the Sales datasets consist of:
 
 - Customers Dataset
 - Orders Dataset
@@ -36,7 +30,7 @@ You can check the documentation in the helper folder, feature_engineering_sales_
 
 ### Marketing Datasets
 
-You can download the dataset from [t](https://opendata.jabarprov.go.id/id)his [link](https://docs.google.com/document/d/1OCgfp8fGf9QSAEVtb8qNWspVGORqNWhx-uEy3KoD4Yc/edit), the data wrangling process for marketing datasets:
+You can download the dataset from this [link](https://docs.google.com/document/d/1OCgfp8fGf9QSAEVtb8qNWspVGORqNWhx-uEy3KoD4Yc/edit), the data wrangling process for marketing datasets:
 
 - Convert into DateTime format
 - Rename column name
@@ -47,7 +41,7 @@ You can check the documentation in the helper folder, feature_engineering_market
 
 ### A/B Testing Datasets
 
-You can download the dataset from [t](https://opendata.jabarprov.go.id/id)his [link](https://docs.google.com/document/d/1V7O6xiJ0wH5h3ddBK4Ji0vcD_6DNuXuKWb-yxRw28Ww/edit), the data wrangling process for a/b testing datasets:
+You can download the dataset from this [link](https://docs.google.com/document/d/1V7O6xiJ0wH5h3ddBK4Ji0vcD_6DNuXuKWb-yxRw28Ww/edit), the data wrangling process for a/b testing datasets:
 
 - Convert into DateTime format
 - Make sure if the control group visit the old page and the treatment group visits the new page
